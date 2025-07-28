@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Maker's | Complete Web Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon"
+        href="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b7e8bdf-741c-43ab-bedb-b03d28a61037.png"
+        type="image/webp">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <style>
+                        .img {
+                            position: relative;
+                            width: 21rem;
+                            mix-blend-mode: multiply;
+                            height: 11rem;
+                            top: 4px;
+                        }
+                    </style>
+
+                    <img class="img" src="/images/website1.png" alt="">
+                    <!-- <h1 class="text-2xl font-bold text-blue-500">Web Maker's</h1> -->
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Portfolio</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Pricing</a>
+                    <a href="#testimonials"
+                        class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-500 px-3 py-2 font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Portfolio</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Crafting Digital Excellence for Your Business</h1>
+                    <p class="text-xl mb-8">We transform ideas into stunning digital experiences that drive results and
+                        elevate your brand.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#services"
+                            class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Explore
+                            Services</a>
+                        <a href="#contact"
+                            class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Get
+                            Started</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6a4ee78e-e7ea-4020-b258-d3eb138d2865.png"
+                        alt="Our team collaborating on website projects in a modern office setting"
+                        class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">250+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                    <div class="text-gray-600">Expert Team</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                    <div class="text-gray-600">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We offer end-to-end digital solutions to help your
+                    business thrive online</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Website Development</h3>
+                    <p class="text-gray-600 mb-4">Tailored websites built with modern technologies to reflect your brand
+                        and convert visitors.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>SEO optimized</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Fast load times</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Beautiful, intuitive interfaces designed to engage users and enhance
+                        customer journeys.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>User research</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Wireframing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Prototyping</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO & Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive strategies to increase your online visibility and drive
+                        qualified traffic.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Keyword research</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Content optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance tracking</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">E-commerce Solutions</h3>
+                    <p class="text-gray-600 mb-4">Powerful online stores designed to maximize conversions and streamline
+                        operations.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Payment integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Product management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Order fulfillment</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-4">Native and cross-platform apps built for iOS and Android to engage
+                        your mobile audience.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>UI/UX design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>App store deployment</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Hosting & Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Reliable hosting solutions with regular updates and security patches
+                        for peace of mind.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Security updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Backups & recovery</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Latest Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Showcasing our expertise through successful digital
+                    solutions</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/knhuisScTPMFt1ytp83JWc.png"
+                            alt="Luxe Boutique e-commerce website with product showcase"
+                            class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-blue-600 opacity-0 hover:opacity-75 flex items-center justify-center transition duration-300">
+                            <a href="#" class="text-white px-4 py-2 border-2 border-white rounded-md">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Food Delivery Website</h3>
+                        <p class="text-gray-600 mb-4">Premium platform for Order Foods </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">React</span>
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">UI/UX</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Node
+                                Js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/384a8e70-91e6-42de-a7e7-a53b2fc29bd1.png"
+                            alt="Health and wellness dashboard with charts and health metrics visualization"
+                            class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-blue-600 opacity-0 hover:opacity-75 flex items-center justify-center transition duration-300">
+                            <a href="#" class="text-white px-4 py-2 border-2 border-white rounded-md">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">HealthTrack Pro</h3>
+                        <p class="text-gray-600 mb-4">Healthcare SaaS platform for wellness tracking</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">React</span>
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Node.js</span>
+                            <span
+                                class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/295e31c5-1db9-4cd5-a266-199a3a6014f8.png"
+                            alt="Modern corporate website with minimalist design and professional photography"
+                            class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-blue-600 opacity-0 hover:opacity-75 flex items-center justify-center transition duration-300">
+                            <a href="#" class="text-white px-4 py-2 border-2 border-white rounded-md">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">BrightEdge Capital</h3>
+                        <p class="text-gray-600 mb-4">Financial services corporate website redesign</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">WordPress</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Custom
+                                Theme</span>
+                            <span
+                                class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition duration-300">View
+                    All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Flexible Pricing Plans</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the plan that fits your business needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-50 p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">Basic</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$499<span
+                                class="text-base font-normal text-gray-500">/project</span></div>
+                        <p class="text-gray-600 mb-4">Perfect for startups and small businesses</p>
+                        <a href="#contact"
+                            class="block w-full bg-blue-600 text-white py-2 rounded-md font-medium hover:bg-blue-700 transition duration-300">Get
+                            Started</a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Custom Website Design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Mobile Responsive</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Basic SEO Setup</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times text-gray-400 mt-1 mr-3"></i>
+                                <span>E-commerce Functionality</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times text-gray-400 mt-1 mr-3"></i>
+                                <span>Content Management System</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>1 Month Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div
+                    class="border-2 border-blue-500 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 shadow-lg">
+                    <div class="bg-blue-600 p-6 text-center text-white">
+                        <span
+                            class="inline-block px-3 py-1 text-xs font-semibold bg-white text-blue-600 rounded-full mb-2">Most
+                            Popular</span>
+                        <h3 class="text-xl font-semibold mb-2">Professional</h3>
+                        <div class="text-4xl font-bold mb-2">$1,299<span
+                                class="text-base font-normal text-white opacity-80">/project</span></div>
+                        <p class="mb-4">Ideal for growing businesses</p>
+                        <a href="#contact"
+                            class="block w-full bg-white text-blue-600 py-2 rounded-md font-medium hover:bg-gray-100 transition duration-300">Get
+                            Started</a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Advanced Website Design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Mobile Responsive</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Comprehensive SEO</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Basic E-commerce</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Content Management System</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>3 Months Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-50 p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">Custom</div>
+                        <p class="text-gray-600 mb-4">Tailored solutions for large businesses</p>
+                        <a href="#contact"
+                            class="block w-full bg-blue-600 text-white py-2 rounded-md font-medium hover:bg-blue-700 transition duration-300">Contact
+                            Us</a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Custom Web Application</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Multi-device Compatibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Advanced SEO & Marketing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Full E-commerce</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Custom CMS</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>12 Months Support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Priority Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Not sure which plan is right for you?</p>
+                <a href="#contact"
+                    class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-600 hover:text-white transition duration-300">Get
+                    a Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Trusted by businesses of all sizes worldwide</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Web Maker's transformed our online presence completely. Their
+                        attention to detail and commitment to delivering on time was impressive. Our website traffic has
+                        increased by over 200% since launch."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/343d6020-91cc-4048-81a0-18148781a0b8.png"
+                            alt="Sarah Johnson, Marketing Director at TechForward"
+                            class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <div class="font-semibold">Sarah Johnson</div>
+                            <div class="text-gray-600 text-sm">Marketing Director, TechForward</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The team at Web Maker's understood our vision perfectly. They built
+                        an e-commerce platform that not only looks amazing but also converts remarkably well. Their
+                        support has been outstanding."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/87205d9d-2d7f-4355-8645-c78af44fc611.png"
+                            alt="Michael Chen, Founder & CEO of LuxeHome - Professional headshot"
+                            class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <div class="font-semibold">Michael Chen</div>
+                            <div class="text-gray-600 text-sm">Founder & CEO, LuxeHome</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"We partnered with Web Maker's for our mobile app development. Their
+                        technical expertise and creative approach resulted in an app that perfectly matches our brand
+                        identity and has excellent user engagement."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76aefdac-65f9-43cf-82a9-146cc62c8f82.png"
+                            alt="Emily Rodriguez, Product Manager at HealthTrack - Professional headshot"
+                            class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <div class="font-semibold">Emily Rodriguez</div>
+                            <div class="text-gray-600 text-sm">Product Manager, HealthTrack</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+                <p class="text-xl max-w-3xl mx-auto">Get in touch with our team for a free consultation</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <div class="booking-form bg-white rounded-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Schedule a Consultation</h3>
+
+                        <!-- this form will submit from this site https://formspree.io/forms/mblkyrwq/submissions -->
+                        <form id="bookingForm" class="space-y-6" action="https://formspree.io/f/mblkyrwq" method="POST">
+
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                required>
+
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                required>
+
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="number" id="phone" name="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black">
+
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested
+                                In</label>
+                            <select id="service" name="service"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                required>
+                                <option value="Select a service" disabled selected>Select a service</option>
+                                <option value="Custom Website Development">Custom Website Development</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="SEO & Digital Marketing">SEO & Digital Marketing</option>
+                                <option value="E-commerce Solutions">E-commerce Solutions</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="Web Hosting & Maintenance">Web Hosting & Maintenance</option>
+                                <option value="Other">Other</option>
+                            </select>
+
+                            <label for="date" class="block text-gray-700 font-medium mb-2">Preferred Meeting
+                                Date</label>
+                            <input type="date" id="date" name="date"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                required>
+
+                            <label for="time" class="block text-gray-700 font-medium mb-2">Preferred Meeting
+                                Time</label>
+                            <select id="time" name="time"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                required>
+                                <option value="Select a time slot" disabled selected>Select a time slot</option>
+                                <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+                                <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
+                                <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+                                <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
+                                <option value="4:00 PM - 5:00 PM">4:00 PM - 5:00 PM</option>
+                            </select>
+
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Project
+                                Details</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                placeholder="Tell us about your project requirements..."></textarea>
+
+
+
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition duration-300">Book
+                                Consultation</button>
+
+                        </form>
+                        <div id="thankYouMessage" class="hidden text-center py-8">
+                            <i class="fas fa-check-circle text-green-500 text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
+                            <p class="text-gray-700 mb-4">Your consultation request has been submitted successfully.</p>
+                            <p class="text-gray-600">Our team will contact you shortly to confirm your appointment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:w-1/2">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+                            <p class="mb-6">Have questions or need more information? Reach out to us through any of
+                                these channels.</p>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-2xl text-white mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-1">Our Office</h4>
+                                <p> Inside Lohia College, Incubation Center, Istart, Rajasthan, 331001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-2xl text-white mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-1">Call Us</h4>
+                                <p>+91 8955219443</p>
+                                <p class="text-sm opacity-80">Mon-Fri, 9am-6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-2xl text-white mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-1">Email Us</h4>
+                                <p>ronitsoni506@gmail.com</p>
+                                <p class="text-sm opacity-80">Response within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-blue-300 text-2xl transition duration-300">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300 text-2xl transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300 text-2xl transition duration-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300 text-2xl transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-blue-300 text-2xl transition duration-300">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <h4 class="text-xl font-semibold mb-2">Business Hours</h4>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 4:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find answers to common questions about our services
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">What services do you offer?</h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">We offer comprehensive web services including custom website
+                                development, UI/UX design, SEO & digital marketing, e-commerce solutions, mobile app
+                                development, and web hosting & maintenance. Our team tailors solutions to meet your
+                                specific business needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">How long does a web project typically take?
+                            </h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">Project timelines vary based on complexity and scope. A basic
+                                website typically takes 4-6 weeks, while more complex projects like custom web
+                                applications or e-commerce platforms may take 8-12 weeks or longer. During our initial
+                                consultation, we'll provide a projected timeline based on your specific requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">What is your pricing structure?</h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">We offer transparent pricing with three main options: Basic
+                                ($350/project), Professional ($525/project), and Enterprise (custom pricing) . The
+                                final cost depends on project scope, functionality requirements, and timeline. Our
+                                pricing includes design, development, testing, and initial support - with no hidden
+                                fees.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">Do you provide ongoing support after launch?
+                            </h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">Yes! All our projects include post-launch support. Basic plans
+                                include 1 month of support, Professional offers 3 months, and Enterprise comes with 12
+                                months of support. After the included period, we offer flexible monthly maintenance
+                                plans to ensure your site remains secure and up-to-date.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">Will my website be mobile-friendly?</h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">Absolutely! All our websites are designed with a mobile-first
+                                approach, ensuring seamless functionality across all devices. We rigorously test on
+                                various screen sizes and devices to guarantee optimal performance whether your visitors
+                                are using desktops, tablets, or smartphones.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <button
+                            class="faq-question flex justify-between items-center w-full text-left focus:outline-none">
+                            <h3 class="text-xl font-semibold text-gray-900">What makes you different from other web
+                                agencies?</h3>
+                            <span class="faq-icon text-blue-600 text-xl">+</span>
+                        </button>
+                        <div class="faq-answer pt-4 hidden">
+                            <p class="text-gray-600">Three things set us apart: 1) Our focus on strategic design that
+                                drives business results, not just aesthetics. 2) Transparent processes with regular
+                                client updates throughout projects. 3) Our technical expertise combined with deep
+                                marketing knowledge ensures your site looks great AND performs exceptionally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-4">Still have questions?</p>
+                    <a href="#contact"
+                        class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition duration-300">Contact
+                        Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Online Presence?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Let's build something amazing together. Get started with a
+                    free consultation today.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#contact"
+                        class="bg-white text-blue-600 px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition duration-300">Get
+                        Started</a>
+                    <a href="tel:+15551234567"
+                        class="border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-700 transition duration-300">Call
+                        Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Web Maker's</h3>
+                    <p class="text-gray-400 mb-4">Crafting digital excellence for businesses worldwide since 2018.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#portfolio"
+                                class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#pricing"
+                                class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
+                        <li><a href="#testimonials"
+                                class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Website
+                                Development</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">UI/UX
+                                Design</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">SEO &
+                                Marketing</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300">E-commerce</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Mobile
+                                UI/UX Degines
+                            </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Other Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Video
+                                Editing</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Social
+                                Media Ads</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on our latest offers and projects.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="px-4 py-2 rounded-l-md focus:outline-none text-black">
+                        <button type="submit"
+                            class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Web Maker's. All rights reserved.</p>
+                <div class="text-gray-400 space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="hidden fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
